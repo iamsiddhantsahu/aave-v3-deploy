@@ -117,6 +117,11 @@ export default {
       eArbitrumNetwork.goerliNitro,
       421613
     ),
+     "uzheth": {
+      url: "https://vm-216.s3it.uzh.ch",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    }
   },
   namedAccounts: {
     ...DEFAULT_NAMED_ACCOUNTS,
